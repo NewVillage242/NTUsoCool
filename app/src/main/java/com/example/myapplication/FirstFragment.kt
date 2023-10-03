@@ -31,9 +31,13 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        var count : Int = 0
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+        }
+        binding.buttonCounter.setOnClickListener {
+            count++
+            binding.tvCounter.setText(count.toString())
         }
     }
 
