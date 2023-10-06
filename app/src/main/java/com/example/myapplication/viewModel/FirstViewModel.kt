@@ -11,4 +11,8 @@ class FirstViewModel : ViewModel() {
     init{
         counter.value = 0
     }
+
+    fun click(){
+        counter.value = counter.value!! + 1
+    }
 }
