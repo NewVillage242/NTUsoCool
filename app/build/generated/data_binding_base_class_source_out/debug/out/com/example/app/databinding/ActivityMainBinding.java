@@ -10,16 +10,21 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.arcgismaps.mapping.view.MapView;
 import com.example.app.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivityMainBinding extends ViewDataBinding {
   @NonNull
+  public final FloatingActionButton fabLocate;
+
+  @NonNull
   public final MapView mapView;
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      MapView mapView) {
+      FloatingActionButton fabLocate, MapView mapView) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.fabLocate = fabLocate;
     this.mapView = mapView;
   }
 

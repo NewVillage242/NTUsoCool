@@ -44,14 +44,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         lifecycle.addObserver(mapView)
-
+        setButton()
         setApiKey()
 
         setupMap()
-
-
     }
 
+    private fun setButton(){
+        activityMainBinding.fabLocate.setOnClickListener(){
+            mapView.setViewpoint(Viewpoint(34.0270, -118.8050, 72000.0))
+        }
+    }
     private fun setupMap() {
 
         val map = ArcGISMap(BasemapStyle.ArcGISTopographic)

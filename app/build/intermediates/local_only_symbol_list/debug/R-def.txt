@@ -9,6 +9,7 @@ color teal_700
 color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id fab_locate
 id mapView
 layout activity_main
 mipmap ic_launcher
