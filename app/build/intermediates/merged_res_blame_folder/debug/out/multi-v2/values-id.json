@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.app-mergeDebugResources-33:/values-id/values-id.xml",
+            "map": [
+                {
+                    "source": "/Users/zhengtingwei/.gradle/caches/transforms-3/dbfe367c45944c26757b166683ed7250/transformed/arcgis-maps-kotlin-200.2.0/res/values-id/values-id.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "64",
+                        "endOffsets": "115"
+                    }
+                }
+            ]
+        }
+    ]
+}
