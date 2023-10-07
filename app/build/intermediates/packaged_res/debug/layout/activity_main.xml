@@ -19,6 +19,13 @@
             android:id="@+id/mapView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:background="@color/purple_500"
+            />
+
         <TextView
             android:id="@+id/tv_1"
             android:layout_width="wrap_content"
@@ -27,7 +34,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginBottom="72dp"
             android:text="@string/text1"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             />
         <ToggleButton
             android:id="@+id/btn_1"
@@ -46,7 +53,7 @@
             android:layout_marginStart="122dp"
             android:layout_marginBottom="72dp"
             android:text="@string/text2"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             />
         <ToggleButton
             android:id="@+id/btn_2"
@@ -66,7 +73,7 @@
             android:layout_marginStart="224dp"
             android:layout_marginBottom="72dp"
             android:text="@string/text3"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             />
         <ToggleButton
             android:id="@+id/btn_3"
@@ -89,5 +96,6 @@
             android:layout_marginBottom="22dp"
 
             app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
          

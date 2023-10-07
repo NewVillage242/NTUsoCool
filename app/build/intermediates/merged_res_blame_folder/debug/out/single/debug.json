@@ -48,10 +48,6 @@
         "source": "/Users/zhengtingwei/.gradle/daemon/7.5.1/com.example.app-main-37:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/zhengtingwei/.gradle/daemon/7.5.1/com.example.app-merged_res-35:/menu_fab_menu.xml.flat",
-        "source": "/Users/zhengtingwei/.gradle/daemon/7.5.1/com.example.app-main-37:/menu/fab_menu.xml"
-    },
-    {
         "merged": "/Users/zhengtingwei/.gradle/daemon/7.5.1/com.example.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "/Users/zhengtingwei/.gradle/daemon/7.5.1/com.example.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
     },

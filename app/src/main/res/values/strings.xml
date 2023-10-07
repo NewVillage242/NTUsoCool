@@ -5,5 +5,9 @@
     <string name="text2">text 2</string>
     <string name="text3">text 3</string>
 
+    <string name="url1">https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Parks_and_Open_Space_Styled/FeatureServer/0</string>
+
+    <string name="my_service">https://services.arcgis.com/NJIPZ3pQXvu3nhB7/arcgis/rest/services/Trailheads/FeatureServer/0</string>
+
 </resources>
 

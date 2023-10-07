@@ -30,10 +30,12 @@ import androidx.lifecycle.ViewModelProvider
 import com.arcgismaps.ApiKey
 import com.arcgismaps.ArcGISEnvironment
 import com.arcgismaps.Color
+import com.arcgismaps.data.ServiceFeatureTable
 import com.arcgismaps.geometry.SpatialReference
 import com.arcgismaps.mapping.ArcGISMap
 import com.arcgismaps.mapping.BasemapStyle
 import com.arcgismaps.mapping.Viewpoint
+import com.arcgismaps.mapping.layers.FeatureLayer
 import com.arcgismaps.mapping.symbology.SimpleLineSymbol
 import com.arcgismaps.mapping.symbology.SimpleLineSymbolStyle
 import com.arcgismaps.mapping.symbology.SimpleMarkerSymbol
@@ -55,8 +57,21 @@ class MainActivity : AppCompatActivity() {
         activityMainBinding.mapView
     }
     private lateinit var viewModel : MainViewModel
+
+    private lateinit var map : ArcGISMap
     private lateinit var pointGraphic : Graphic
     private lateinit var graphicsOverlay: GraphicsOverlay
+
+
+    private lateinit var parksServiceFeatureTable : ServiceFeatureTable
+    private lateinit var fireSearviceFeatureTable: ServiceFeatureTable
+//    val trailsServiceFeatureTable = ServiceFeatureTable(getString(R.string.url2))
+//    val trailHeadsServiceFeatureTable = ServiceFeatureTable(getString(R.string.url3))
+//
+    private lateinit var  parkFeatureLayer : FeatureLayer
+    private lateinit var fireFeatureLaver : FeatureLayer
+//    val trailsServiceFeatureLayer = FeatureLayer.createWithFeatureTable(trailsServiceFeatureTable)
+//    val trailHeadsFeatureLayer = FeatureLayer.createWithFeatureTable(trailHeadsServiceFeatureTable)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
@@ -80,15 +95,34 @@ class MainActivity : AppCompatActivity() {
                 removePoint()
             }
         }
+        activityMainBinding.btn2.setOnClickListener(){
+            if(activityMainBinding.btn2.isChecked){
+                map.operationalLayers.add(parkFeatureLayer)
+            } else {
+                map.operationalLayers.remove(parkFeatureLayer)
+            }
+        }
+        activityMainBinding.btn3.setOnClickListener(){
+            if(activityMainBinding.btn3.isChecked){
+                map.operationalLayers.add(fireFeatureLaver)
+            } else {
+                map.operationalLayers.remove(fireFeatureLaver)
+            }
+        }
     }
     private fun setupMap() {
 
-        val map = ArcGISMap(BasemapStyle.ArcGISTopographic)
+        map = ArcGISMap(BasemapStyle.ArcGISTopographic)
 
         // set the map to be displayed in the layout's MapView
         mapView.map = map
 
         mapView.setViewpoint(Viewpoint(34.0270, -118.8050, 72000.0))
+
+        parksServiceFeatureTable = ServiceFeatureTable(getString(R.string.url1))
+        fireSearviceFeatureTable = ServiceFeatureTable(getString(R.string.my_service))
+        parkFeatureLayer = FeatureLayer.createWithFeatureTable(parksServiceFeatureTable)
+        fireFeatureLaver = FeatureLayer.createWithFeatureTable(fireSearviceFeatureTable)
 
         setupPointInit()
     }
@@ -118,8 +152,6 @@ class MainActivity : AppCompatActivity() {
     private fun addPoint() {
 
         // create a graphics overlay and add it to the graphicsOverlays property of the map view
-
-
         // add the point graphic to the graphics overlay
         graphicsOverlay.graphics.add(pointGraphic)
 

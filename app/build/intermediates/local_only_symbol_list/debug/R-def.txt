@@ -21,7 +21,9 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string api_key
 string app_name
+string my_service
 string text1
 string text2
 string text3
+string url1
 style Theme.KotlinApp

@@ -3475,6 +3475,7 @@ int string mtrl_switch_track_decoration_path 0x7f0f0085
 int string mtrl_switch_track_path 0x7f0f0086
 int string mtrl_timepicker_cancel 0x7f0f0087
 int string mtrl_timepicker_confirm 0x7f0f0088
+int string my_service 0x7f0f0097
 int string password_toggle_content_description 0x7f0f0089
 int string path_password_eye 0x7f0f008a
 int string path_password_eye_mask_strike_through 0x7f0f008b
@@ -3485,6 +3486,7 @@ int string status_bar_notification_info_overflow 0x7f0f008f
 int string text1 0x7f0f0091
 int string text2 0x7f0f0092
 int string text3 0x7f0f0093
+int string url1 0x7f0f0094
 int style AlertDialog_AppCompat 0x7f100000
 int style AlertDialog_AppCompat_Light 0x7f100001
 int style Animation_AppCompat_Dialog 0x7f100002
