@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Display a map</string>
     <string name="api_key">AAPKf99d4cc5d9844b6ba03d30bba67cce5ddP1YwAcF2kYLAMoyQXZtb-GUw-JAOixnDpoce2dhXTiTgGTKmeSY6Uo9hwsg9LmI</string>
+    <string name="text1">text 1</string>
+    <string name="text2">text 2</string>
+    <string name="text3">text 3</string>
+
 </resources>
 

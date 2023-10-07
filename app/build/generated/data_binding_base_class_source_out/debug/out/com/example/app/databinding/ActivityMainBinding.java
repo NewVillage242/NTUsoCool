@@ -4,28 +4,59 @@ package com.example.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.ToggleButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.arcgismaps.mapping.view.MapView;
 import com.example.app.R;
+import com.example.app.viewModel.MainViewModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivityMainBinding extends ViewDataBinding {
   @NonNull
+  public final ToggleButton btn1;
+
+  @NonNull
+  public final ToggleButton btn2;
+
+  @NonNull
+  public final ToggleButton btn3;
+
+  @NonNull
   public final FloatingActionButton fabLocate;
 
   @NonNull
   public final MapView mapView;
 
+  @NonNull
+  public final TextView tv1;
+
+  @Bindable
+  protected MainViewModel mViewModel;
+
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      FloatingActionButton fabLocate, MapView mapView) {
+      ToggleButton btn1, ToggleButton btn2, ToggleButton btn3, FloatingActionButton fabLocate,
+      MapView mapView, TextView tv1) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.btn1 = btn1;
+    this.btn2 = btn2;
+    this.btn3 = btn3;
     this.fabLocate = fabLocate;
     this.mapView = mapView;
+    this.tv1 = tv1;
+  }
+
+  public abstract void setViewModel(@Nullable MainViewModel viewModel);
+
+  @Nullable
+  public MainViewModel getViewModel() {
+    return mViewModel;
   }
 
   @NonNull

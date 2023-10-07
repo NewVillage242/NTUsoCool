@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color gray
 color purple_200
 color purple_500
 color purple_700
@@ -9,11 +10,18 @@ color teal_700
 color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id btn_1
+id btn_2
+id btn_3
 id fab_locate
 id mapView
+id tv_1
 layout activity_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 string api_key
 string app_name
+string text1
+string text2
+string text3
 style Theme.KotlinApp

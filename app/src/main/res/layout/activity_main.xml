@@ -3,6 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.app.viewModel.MainViewModel" />
+    </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -14,6 +19,67 @@
             android:id="@+id/mapView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="72dp"
+            android:text="@string/text1"
+            android:textColor="@color/black"
+            />
+        <ToggleButton
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="22dp"
+            android:width="95dp"
+            android:checked="false"
+            app:srcCompat="@android:drawable/ic_input_add" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="122dp"
+            android:layout_marginBottom="72dp"
+            android:text="@string/text2"
+            android:textColor="@color/black"
+            />
+        <ToggleButton
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="122dp"
+            android:layout_marginBottom="22dp"
+            android:text="button"
+            android:width="95dp"
+
+            app:srcCompat="@android:drawable/ic_input_add" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="224dp"
+            android:layout_marginBottom="72dp"
+            android:text="@string/text3"
+            android:textColor="@color/black"
+            />
+        <ToggleButton
+            android:id="@+id/btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="224dp"
+            android:layout_marginBottom="22dp"
+            android:text="b"
+            android:width="95dp"
+
+            app:srcCompat="@android:drawable/ic_input_add" />
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_locate"
             android:layout_width="wrap_content"

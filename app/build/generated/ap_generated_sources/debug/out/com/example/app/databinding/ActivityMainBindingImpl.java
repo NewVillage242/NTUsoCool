@@ -15,7 +15,11 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.mapView, 1);
-        sViewsWithIds.put(R.id.fab_locate, 2);
+        sViewsWithIds.put(R.id.tv_1, 2);
+        sViewsWithIds.put(R.id.btn_1, 3);
+        sViewsWithIds.put(R.id.btn_2, 4);
+        sViewsWithIds.put(R.id.btn_3, 5);
+        sViewsWithIds.put(R.id.fab_locate, 6);
     }
     // views
     @NonNull
@@ -26,12 +30,16 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
     }
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[2]
+            , (android.widget.ToggleButton) bindings[3]
+            , (android.widget.ToggleButton) bindings[4]
+            , (android.widget.ToggleButton) bindings[5]
+            , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[6]
             , (com.arcgismaps.mapping.view.MapView) bindings[1]
+            , (android.widget.TextView) bindings[2]
             );
         this.mboundView0 = (androidx.coordinatorlayout.widget.CoordinatorLayout) bindings[0];
         this.mboundView0.setTag(null);
@@ -43,7 +51,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x1L;
+                mDirtyFlags = 0x2L;
         }
         requestRebind();
     }
@@ -61,7 +69,17 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     @Override
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
+        if (BR.viewModel == variableId) {
+            setViewModel((com.example.app.viewModel.MainViewModel) variable);
+        }
+        else {
+            variableSet = false;
+        }
             return variableSet;
+    }
+
+    public void setViewModel(@Nullable com.example.app.viewModel.MainViewModel ViewModel) {
+        this.mViewModel = ViewModel;
     }
 
     @Override
@@ -85,7 +103,8 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): null
+        flag 0 (0x1L): viewModel
+        flag 1 (0x2L): null
     flag mapping end*/
     //end
 }

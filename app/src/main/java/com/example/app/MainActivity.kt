@@ -17,18 +17,33 @@
 
 package com.example.app
 
+import com.arcgismaps.geometry.Point
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.CalendarContract.Colors
 import android.util.Log
+import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import com.arcgismaps.ApiKey
 import com.arcgismaps.ArcGISEnvironment
+import com.arcgismaps.Color
+import com.arcgismaps.geometry.SpatialReference
 import com.arcgismaps.mapping.ArcGISMap
 import com.arcgismaps.mapping.BasemapStyle
 import com.arcgismaps.mapping.Viewpoint
+import com.arcgismaps.mapping.symbology.SimpleLineSymbol
+import com.arcgismaps.mapping.symbology.SimpleLineSymbolStyle
+import com.arcgismaps.mapping.symbology.SimpleMarkerSymbol
+import com.arcgismaps.mapping.symbology.SimpleMarkerSymbolStyle
+import com.arcgismaps.mapping.view.Graphic
+import com.arcgismaps.mapping.view.GraphicsOverlay
 import com.arcgismaps.mapping.view.MapView
 import com.example.app.databinding.ActivityMainBinding
+import com.example.app.viewModel.MainViewModel
+import java.security.Provider
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,20 +54,31 @@ class MainActivity : AppCompatActivity() {
     private val mapView: MapView by lazy {
         activityMainBinding.mapView
     }
-
+    private lateinit var viewModel : MainViewModel
+    private lateinit var pointGraphic : Graphic
+    private lateinit var graphicsOverlay: GraphicsOverlay
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        activityMainBinding.viewModel = viewModel
         lifecycle.addObserver(mapView)
         setButton()
         setApiKey()
-
         setupMap()
     }
 
     private fun setButton(){
         activityMainBinding.fabLocate.setOnClickListener(){
             mapView.setViewpoint(Viewpoint(34.0270, -118.8050, 72000.0))
+        }
+        activityMainBinding.btn1.setOnClickListener(){
+            if (activityMainBinding.btn1.isChecked){
+                activityMainBinding.tv1.setText("On")
+                addPoint()
+            } else{
+                activityMainBinding.tv1.setText("off")
+                removePoint()
+            }
         }
     }
     private fun setupMap() {
@@ -64,8 +90,24 @@ class MainActivity : AppCompatActivity() {
 
         mapView.setViewpoint(Viewpoint(34.0270, -118.8050, 72000.0))
 
+        setupPointInit()
     }
+    private fun setupPointInit(){
+        graphicsOverlay = GraphicsOverlay()
+        mapView.graphicsOverlays.add(graphicsOverlay)
+        // create a point geometry with a location and spatial reference
+        // Point(latitude, longitude, spatial reference)
+        val point = Point(-118.8065, 34.0005, SpatialReference.wgs84())
 
+        // create a point symbol that is an small red circle
+        val simpleMarkerSymbol = SimpleMarkerSymbol(SimpleMarkerSymbolStyle.Circle, Color.red, 10f)
+
+        // create a blue outline symbol and assign it to the outline property of the simple marker symbol
+        val blueOutlineSymbol = SimpleLineSymbol(SimpleLineSymbolStyle.Solid, Color.fromRgba(0, 0, 255), 2f)
+        simpleMarkerSymbol.outline = blueOutlineSymbol
+        // create a graphic with the point geometry and symbol
+        pointGraphic = Graphic(point, simpleMarkerSymbol)
+    }
     private fun setApiKey() {
         // It is not best practice to store API keys in source code. We have you insert one here
         // to streamline this tutorial.
@@ -73,10 +115,19 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun showError(message: String) {
-        Toast.makeText(applicationContext, message, Toast.LENGTH_LONG).show()
-        Log.e(localClassName, message)
+    private fun addPoint() {
+
+        // create a graphics overlay and add it to the graphicsOverlays property of the map view
+
+
+        // add the point graphic to the graphics overlay
+        graphicsOverlay.graphics.add(pointGraphic)
+
     }
 
+    private fun removePoint(){
+        // TODO
+        graphicsOverlay.graphics.remove(pointGraphic)
+    }
 }
 

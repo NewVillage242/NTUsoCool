@@ -1325,6 +1325,7 @@ int color error_color_material_dark 0x7f050058
 int color error_color_material_light 0x7f050059
 int color foreground_material_dark 0x7f05005a
 int color foreground_material_light 0x7f05005b
+int color gray 0x7f050262
 int color highlighted_text_material_dark 0x7f05005c
 int color highlighted_text_material_light 0x7f05005d
 int color m3_appbar_overlay_color 0x7f05005e
@@ -2743,6 +2744,9 @@ int id bounce 0x7f08005e
 int id bounceBoth 0x7f08005f
 int id bounceEnd 0x7f080060
 int id bounceStart 0x7f080061
+int id btn_1 0x7f0801ec
+int id btn_2 0x7f0801ed
+int id btn_3 0x7f0801ee
 int id buttonPanel 0x7f080062
 int id cache_measures 0x7f080063
 int id callMeasure 0x7f080064
@@ -3108,6 +3112,7 @@ int id transition_position 0x7f0801ca
 int id transition_scene_layoutid_cache 0x7f0801cb
 int id transition_transform 0x7f0801cc
 int id triangle 0x7f0801cd
+int id tv_1 0x7f0801ef
 int id unchecked 0x7f0801ce
 int id uniform 0x7f0801cf
 int id unlabeled 0x7f0801d0
@@ -3477,6 +3482,9 @@ int string path_password_eye_mask_visible 0x7f0f008c
 int string path_password_strike_through 0x7f0f008d
 int string search_menu_title 0x7f0f008e
 int string status_bar_notification_info_overflow 0x7f0f008f
+int string text1 0x7f0f0091
+int string text2 0x7f0f0092
+int string text3 0x7f0f0093
 int style AlertDialog_AppCompat 0x7f100000
 int style AlertDialog_AppCompat_Light 0x7f100001
 int style Animation_AppCompat_Dialog 0x7f100002
