@@ -22,6 +22,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.CalendarContract.Colors
 import android.util.Log
+import android.view.Menu
 import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
@@ -45,8 +46,6 @@ import com.arcgismaps.mapping.view.GraphicsOverlay
 import com.arcgismaps.mapping.view.MapView
 import com.example.app.databinding.ActivityMainBinding
 import com.example.app.viewModel.MainViewModel
-import java.lang.Exception
-import java.security.Provider
 
 class MainActivity : AppCompatActivity() {
 
@@ -162,6 +161,11 @@ class MainActivity : AppCompatActivity() {
     private fun removePoint(){
         // TODO
         graphicsOverlay.graphics.remove(pointGraphic)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return true
     }
 }
 

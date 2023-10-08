@@ -1828,6 +1828,7 @@ color primary_text_disabled_material_light
 color purple_200
 color purple_500
 color purple_700
+color red
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -2709,6 +2710,8 @@ id action_container
 id action_context_bar
 id action_divider
 id action_image
+id action_item_add
+id action_item_two
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
@@ -2748,6 +2751,8 @@ id bounceStart
 id btn_1
 id btn_2
 id btn_3
+id btn_cancel
+id btn_confirm
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3335,6 +3340,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
