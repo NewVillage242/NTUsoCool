@@ -10,79 +10,101 @@
 9        android:targetSdkVersion="33" />
 9-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:5:5-66
-11-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:5:22-64
-12
-13    <permission
-13-->[androidx.core:core:1.9.0] /Users/zhengtingwei/.gradle/caches/transforms-3/47e75a404d7618472fa98307c0f92e7c/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
-14        android:name="com.example.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.9.0] /Users/zhengtingwei/.gradle/caches/transforms-3/47e75a404d7618472fa98307c0f92e7c/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
-15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.9.0] /Users/zhengtingwei/.gradle/caches/transforms-3/47e75a404d7618472fa98307c0f92e7c/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
-16
-17    <uses-permission android:name="com.example.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.9.0] /Users/zhengtingwei/.gradle/caches/transforms-3/47e75a404d7618472fa98307c0f92e7c/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.9.0] /Users/zhengtingwei/.gradle/caches/transforms-3/47e75a404d7618472fa98307c0f92e7c/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
-18
-19    <application
-19-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:7:5-23:19
-20        android:allowBackup="true"
-20-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:8:9-35
-21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.9.0] /Users/zhengtingwei/.gradle/caches/transforms-3/47e75a404d7618472fa98307c0f92e7c/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
-22        android:debuggable="true"
-23        android:extractNativeLibs="false"
-24        android:icon="@mipmap/ic_launcher"
-24-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:9:9-43
-25        android:label="@string/app_name"
-25-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:10:9-41
-26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:11:9-54
-27        android:supportsRtl="true"
-27-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:12:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.KotlinApp" >
-29-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:13:9-47
-30        <activity
-30-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:14:9-22:20
-31            android:name="com.example.app.MainActivity"
-31-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:15:13-41
-32            android:exported="true" >
-32-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:16:13-36
-33            <intent-filter>
-33-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:17:13-21:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:18:17-69
-34-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:18:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:20:17-77
-36-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:20:27-74
-37            </intent-filter>
-38        </activity>
-39
-40        <provider
-40-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-41            android:name="androidx.startup.InitializationProvider"
-41-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-42            android:authorities="com.example.app.androidx-startup"
-42-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-43            android:exported="false" >
-43-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-44            <meta-data
-44-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-45                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-45-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-46                android:value="androidx.startup" />
-46-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-47            <meta-data
-47-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/zhengtingwei/.gradle/caches/transforms-3/49ab22ea6dc091e2865ff7a26817309f/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-48-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/zhengtingwei/.gradle/caches/transforms-3/49ab22ea6dc091e2865ff7a26817309f/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-49                android:value="androidx.startup" />
-49-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/zhengtingwei/.gradle/caches/transforms-3/49ab22ea6dc091e2865ff7a26817309f/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-50        </provider>
-51    </application>
-52
-53</manifest>
+11    <uses-feature
+11-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:4:5-5:35
+12        android:name="android.hardware.camera"
+12-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:4:19-57
+13        android:required="true" />
+13-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:5:9-32
+14
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:6:5-65
+15-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:6:22-62
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:7:5-81
+16-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:7:22-78
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:8:5-66
+17-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:8:22-64
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:7:5-81
+18-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:7:22-78
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:10:5-80
+19-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:10:22-77
+20    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+20-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:11:5-71
+20-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:11:22-68
+21
+22    <permission
+22-->[androidx.core:core:1.9.0] /Users/zhengtingwei/.gradle/caches/transforms-3/47e75a404d7618472fa98307c0f92e7c/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+23        android:name="com.example.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+23-->[androidx.core:core:1.9.0] /Users/zhengtingwei/.gradle/caches/transforms-3/47e75a404d7618472fa98307c0f92e7c/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+24        android:protectionLevel="signature" />
+24-->[androidx.core:core:1.9.0] /Users/zhengtingwei/.gradle/caches/transforms-3/47e75a404d7618472fa98307c0f92e7c/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+25
+26    <uses-permission android:name="com.example.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+26-->[androidx.core:core:1.9.0] /Users/zhengtingwei/.gradle/caches/transforms-3/47e75a404d7618472fa98307c0f92e7c/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+26-->[androidx.core:core:1.9.0] /Users/zhengtingwei/.gradle/caches/transforms-3/47e75a404d7618472fa98307c0f92e7c/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+27
+28    <application
+28-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:13:5-29:19
+29        android:allowBackup="true"
+29-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:14:9-35
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.9.0] /Users/zhengtingwei/.gradle/caches/transforms-3/47e75a404d7618472fa98307c0f92e7c/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+31        android:debuggable="true"
+32        android:extractNativeLibs="false"
+33        android:icon="@mipmap/ic_launcher"
+33-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:15:9-43
+34        android:label="@string/app_name"
+34-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:16:9-41
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:17:9-54
+36        android:supportsRtl="true"
+36-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:18:9-35
+37        android:testOnly="true"
+38        android:theme="@style/Theme.KotlinApp" >
+38-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:19:9-47
+39        <activity
+39-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:20:9-28:20
+40            android:name="com.example.app.MainActivity"
+40-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:21:13-41
+41            android:exported="true" >
+41-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:22:13-36
+42            <intent-filter>
+42-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:23:13-27:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:24:17-69
+43-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:24:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:26:17-77
+45-->/Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:26:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <provider
+49-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+50            android:name="androidx.startup.InitializationProvider"
+50-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+51            android:authorities="com.example.app.androidx-startup"
+51-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+52            android:exported="false" >
+52-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+53            <meta-data
+53-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+54                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+54-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+55                android:value="androidx.startup" />
+55-->[androidx.emoji2:emoji2:1.2.0] /Users/zhengtingwei/.gradle/caches/transforms-3/662201dda9b2a085d260c6e68883b07a/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+56            <meta-data
+56-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/zhengtingwei/.gradle/caches/transforms-3/49ab22ea6dc091e2865ff7a26817309f/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+57                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+57-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/zhengtingwei/.gradle/caches/transforms-3/49ab22ea6dc091e2865ff7a26817309f/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+58                android:value="androidx.startup" />
+58-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/zhengtingwei/.gradle/caches/transforms-3/49ab22ea6dc091e2865ff7a26817309f/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+59        </provider>
+60    </application>
+61
+62</manifest>

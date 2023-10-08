@@ -17,10 +17,12 @@
 
 package com.example.app
 
+import android.content.Intent
 import com.arcgismaps.geometry.Point
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.CalendarContract.Colors
+import android.provider.MediaStore
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.Menu
@@ -140,7 +142,7 @@ class MainActivity : AppCompatActivity() {
         val alertDialog = builder.create()
         val constraintOK = dialogView.findViewById<View>(R.id.constraint_safe)
         val constraintHelp = dialogView.findViewById<View>(R.id.constraint_help)
-
+        val constraintCamera = dialogView.findViewById<View>(R.id.constraint_camera)
         // Handle the OK button click event
         constraintOK.setOnClickListener {
             val point = Point(x, y, SpatialReference.wgs84())
@@ -155,6 +157,12 @@ class MainActivity : AppCompatActivity() {
             val pointG = Graphic(point, simpleMarkerSymbol)
             callback(pointG)
             alertDialog.dismiss()
+        }
+        constraintCamera.setOnClickListener{
+            val intent = Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE)
+            startActivity(intent)
+            alertDialog.dismiss()
+
         }
         alertDialog.show()
     }

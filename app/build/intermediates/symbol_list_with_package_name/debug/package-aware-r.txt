@@ -2781,6 +2781,7 @@ id collapseActionView
 id compress
 id confirm_button
 id constraint
+id constraint_camera
 id constraint_help
 id constraint_safe
 id container
@@ -3130,6 +3131,7 @@ id up
 id useLogo
 id v_icon1
 id v_icon2
+id v_icon3
 id vertical_only
 id view_offset_helper
 id view_transition

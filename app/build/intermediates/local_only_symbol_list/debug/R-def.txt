@@ -21,6 +21,7 @@ id btn_3
 id btn_cancel
 id btn_confirm
 id constraint
+id constraint_camera
 id constraint_help
 id constraint_safe
 id fab_locate
@@ -28,6 +29,7 @@ id mapView
 id tv_1
 id v_icon1
 id v_icon2
+id v_icon3
 layout activity_main
 layout dialog_icon_select
 menu menu

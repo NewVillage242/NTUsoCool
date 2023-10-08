@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-25:12
-INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-25:12
-INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-25:12
-INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-25:12
+ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-31:12
+INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-31:12
+INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-31:12
+INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-31:12
 MERGED from [androidx.databinding:databinding-adapters:7.3.1] /Users/zhengtingwei/.gradle/caches/transforms-3/c756bbe4cf8b60321d9ef19e12857efd/transformed/databinding-adapters-7.3.1/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.databinding:databinding-ktx:7.3.1] /Users/zhengtingwei/.gradle/caches/transforms-3/74912f62e783f21883be5ecd7a644951/transformed/databinding-ktx-7.3.1/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.databinding:databinding-runtime:7.3.1] /Users/zhengtingwei/.gradle/caches/transforms-3/fbdc1b57db1307d4ec0c7864440233f3/transformed/databinding-runtime-7.3.1/AndroidManifest.xml:2:1-9:12
@@ -52,29 +52,51 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/zhengtingwei/.grad
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/zhengtingwei/.gradle/caches/transforms-3/5048e23522cc2218c2944cbc83b011ec/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/zhengtingwei/.gradle/caches/transforms-3/f2e32e3e13586785a0a90107ddca3303/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/zhengtingwei/.gradle/caches/transforms-3/49953057b5a76cc863262a993e5a5d99/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-25:12
-INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-25:12
-INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-25:12
+INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-31:12
+INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-31:12
+INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-31:12
 	package
 		INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-25:12
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-31:12
 		INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-25:12
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-31:12
 		INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-25:12
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:1-31:12
 		INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:3:11-69
-uses-permission#android.permission.INTERNET
-ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:5:5-66
+uses-feature#android.hardware.camera
+ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:4:5-5:35
+	android:required
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:5:9-32
 	android:name
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:4:19-57
+uses-permission#android.permission.CAMERA
+ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:6:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.INTERNET
+ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:8:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:10:22-77
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:11:5-71
+	android:name
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:11:22-68
 application
-ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:7:5-23:19
+ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:13:5-29:19
 MERGED from [com.google.android.material:material:1.7.0] /Users/zhengtingwei/.gradle/caches/transforms-3/69c281fe64dfc435eb346c509a4d7488/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] /Users/zhengtingwei/.gradle/caches/transforms-3/69c281fe64dfc435eb346c509a4d7488/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/zhengtingwei/.gradle/caches/transforms-3/875fc1e254ca9f758297c6afc1d04e0b/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -92,33 +114,33 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/zhengtingwei/.gradle
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] /Users/zhengtingwei/.gradle/caches/transforms-3/47e75a404d7618472fa98307c0f92e7c/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:16:9-41
 	android:roundIcon
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:17:9-54
 	android:icon
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:9:9-43
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:15:9-43
 	android:allowBackup
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:13:9-47
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:19:9-47
 activity#com.example.app.MainActivity
-ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:14:9-22:20
+ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:20:9-28:20
 	android:exported
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:16:13-36
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:22:13-36
 	android:name
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:15:13-41
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:21:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:17:13-21:29
+ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:18:17-69
+ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:18:25-66
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:20:17-77
+ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:20:27-74
+		ADDED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml:26:27-74
 uses-sdk
 INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/zhengtingwei/Downloads/display-a-map/app/src/main/AndroidManifest.xml
