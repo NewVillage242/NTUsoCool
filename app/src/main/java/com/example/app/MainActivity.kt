@@ -22,9 +22,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.CalendarContract.Colors
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import android.widget.PopupMenu
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.constraintlayout.widget.ConstraintSet.Constraint
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -36,6 +41,7 @@ import com.arcgismaps.geometry.SpatialReference
 import com.arcgismaps.mapping.ArcGISMap
 import com.arcgismaps.mapping.BasemapStyle
 import com.arcgismaps.mapping.Viewpoint
+import com.arcgismaps.mapping.ViewpointType
 import com.arcgismaps.mapping.layers.FeatureLayer
 import com.arcgismaps.mapping.symbology.SimpleLineSymbol
 import com.arcgismaps.mapping.symbology.SimpleLineSymbolStyle
@@ -110,7 +116,49 @@ class MainActivity : AppCompatActivity() {
                 map.operationalLayers.remove(fireFeatureLaver)
             }
         }
+        activityMainBinding.btnCancel.setOnClickListener(){
+            activityMainBinding.constraint.visibility = View.GONE
+        }
+        activityMainBinding.btnConfirm.setOnClickListener(){
+            //TODO
+            val x = mapView.getCurrentViewpoint(ViewpointType.CenterAndScale)!!.targetGeometry.extent.center.x / 111319.49079327357
+            val y = mapView.getCurrentViewpoint(ViewpointType.CenterAndScale)!!.targetGeometry.extent.center.y / 118506.71651639159
+
+            showDialog(x,y,myCallBack)
+        }
     }
+
+    private val myCallBack: (Graphic) -> Boolean ={ pointG -> graphicsOverlay.graphics.add(pointG)}
+    private fun showDialog(x:Double, y:Double, callback: (Graphic)->Boolean)   {
+        val builder = AlertDialog.Builder(this)
+        val inflater = LayoutInflater.from(this)
+        val dialogView = inflater.inflate(R.layout.dialog_icon_select, null)
+        builder.setView(dialogView)
+
+
+        // Customize the dialog appearance or add click listeners here
+        val alertDialog = builder.create()
+        val constraintOK = dialogView.findViewById<View>(R.id.constraint_safe)
+        val constraintHelp = dialogView.findViewById<View>(R.id.constraint_help)
+
+        // Handle the OK button click event
+        constraintOK.setOnClickListener {
+            val point = Point(x, y, SpatialReference.wgs84())
+            val simpleMarkerSymbol = SimpleMarkerSymbol(SimpleMarkerSymbolStyle.Diamond, Color.cyan, 15f)
+            val pointG = Graphic(point, simpleMarkerSymbol)
+            callback(pointG)
+            alertDialog.dismiss()
+        }
+        constraintHelp.setOnClickListener {
+            val point = Point(x, y, SpatialReference.wgs84())
+            val simpleMarkerSymbol = SimpleMarkerSymbol(SimpleMarkerSymbolStyle.Triangle, Color.black, 15f)
+            val pointG = Graphic(point, simpleMarkerSymbol)
+            callback(pointG)
+            alertDialog.dismiss()
+        }
+        alertDialog.show()
+    }
+
     private fun setupMap() {
 
         map = ArcGISMap(BasemapStyle.ArcGISCommunity)
@@ -159,7 +207,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun removePoint(){
-        // TODO
         graphicsOverlay.graphics.remove(pointGraphic)
     }
 
@@ -167,5 +214,18 @@ class MainActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.menu, menu)
         return true
     }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId){
+            R.id.action_item_add->{
+                activityMainBinding.constraint.visibility = View.VISIBLE
+            }
+            R.id.action_item_two->{
+                //TODO
+            }
+        }
+        return true
+    }
+
 }
 

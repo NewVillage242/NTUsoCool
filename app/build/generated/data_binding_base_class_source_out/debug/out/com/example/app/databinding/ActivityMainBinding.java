@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
@@ -36,6 +37,9 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final Button btnConfirm;
 
   @NonNull
+  public final ConstraintLayout constraint;
+
+  @NonNull
   public final FloatingActionButton fabLocate;
 
   @NonNull
@@ -49,13 +53,14 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ToggleButton btn1, ToggleButton btn2, ToggleButton btn3, Button btnCancel, Button btnConfirm,
-      FloatingActionButton fabLocate, MapView mapView, TextView tv1) {
+      ConstraintLayout constraint, FloatingActionButton fabLocate, MapView mapView, TextView tv1) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btn1 = btn1;
     this.btn2 = btn2;
     this.btn3 = btn3;
     this.btnCancel = btnCancel;
     this.btnConfirm = btnConfirm;
+    this.constraint = constraint;
     this.fabLocate = fabLocate;
     this.mapView = mapView;
     this.tv1 = tv1;

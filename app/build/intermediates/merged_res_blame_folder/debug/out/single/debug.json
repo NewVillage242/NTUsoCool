@@ -40,10 +40,6 @@
         "source": "/Users/zhengtingwei/.gradle/daemon/7.5.1/com.example.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.app-merged_res-35:/layout_activity_main.xml.flat",
-        "source": "com.example.app-main-37:/layout/activity_main.xml"
-    },
-    {
         "merged": "/Users/zhengtingwei/.gradle/daemon/7.5.1/com.example.app-merged_res-35:/drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "/Users/zhengtingwei/.gradle/daemon/7.5.1/com.example.app-main-37:/drawable-v24/ic_launcher_foreground.xml"
     },
@@ -58,6 +54,10 @@
     {
         "merged": "/Users/zhengtingwei/.gradle/daemon/7.5.1/com.example.app-merged_res-35:/drawable_ic_launcher_background.xml.flat",
         "source": "/Users/zhengtingwei/.gradle/daemon/7.5.1/com.example.app-main-37:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.app-merged_res-35:/layout_dialog_icon_select.xml.flat",
+        "source": "com.example.app-main-37:/layout/dialog_icon_select.xml"
     },
     {
         "merged": "/Users/zhengtingwei/.gradle/daemon/7.5.1/com.example.app-merged_res-35:/mipmap-xxhdpi_ic_launcher_round.webp.flat",

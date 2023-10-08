@@ -2779,6 +2779,8 @@ id collapseActionView
 id compress
 id confirm_button
 id constraint
+id constraint_help
+id constraint_safe
 id container
 id content
 id contentPanel
@@ -3124,6 +3126,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id v_icon1
+id v_icon2
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3281,6 +3285,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_icon_select
 layout geoview_esribanner_layout
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
