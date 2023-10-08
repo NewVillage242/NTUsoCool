@@ -45,6 +45,7 @@ import com.arcgismaps.mapping.view.GraphicsOverlay
 import com.arcgismaps.mapping.view.MapView
 import com.example.app.databinding.ActivityMainBinding
 import com.example.app.viewModel.MainViewModel
+import java.lang.Exception
 import java.security.Provider
 
 class MainActivity : AppCompatActivity() {
@@ -84,7 +85,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun setButton(){
         activityMainBinding.fabLocate.setOnClickListener(){
-            mapView.setViewpoint(Viewpoint(34.0270, -118.8050, 72000.0))
+            var scale = mapView.mapScale.value
+            mapView.setViewpoint(Viewpoint(34.0270, -118.8050, scale))
         }
         activityMainBinding.btn1.setOnClickListener(){
             if (activityMainBinding.btn1.isChecked){
@@ -112,7 +114,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun setupMap() {
 
-        map = ArcGISMap(BasemapStyle.ArcGISTopographic)
+        map = ArcGISMap(BasemapStyle.ArcGISCommunity)
 
         // set the map to be displayed in the layout's MapView
         mapView.map = map
