@@ -144,7 +144,7 @@ class MainActivity : AppCompatActivity() {
         // Handle the OK button click event
         constraintOK.setOnClickListener {
             val point = Point(x, y, SpatialReference.wgs84())
-            val simpleMarkerSymbol = SimpleMarkerSymbol(SimpleMarkerSymbolStyle.Diamond, Color.cyan, 15f)
+            val simpleMarkerSymbol = SimpleMarkerSymbol(SimpleMarkerSymbolStyle.Triangle, Color.cyan, 15f)
             val pointG = Graphic(point, simpleMarkerSymbol)
             callback(pointG)
             alertDialog.dismiss()

@@ -5,6 +5,23 @@
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Select your current state"
+        android:textSize="26dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/black"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        />
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,8 +32,8 @@
             android:id="@+id/v_icon1"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:backgroundTint="@color/black"
-            android:background="@android:drawable/ic_menu_mylocation"
+            android:backgroundTint="@color/cyan"
+            android:background="@drawable/ic_triangle"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -55,7 +72,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:backgroundTint="@color/black"
-            android:background="@android:drawable/ic_menu_camera"
+            android:background="@drawable/ic_triangle"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="black">#FF000000</color>
+    <color name="cyan">#ff00a0e9</color>
     <color name="gray">#FF888888</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -11,6 +12,7 @@
     <color name="white">#FFFFFFFF</color>
     <string name="api_key">AAPKf99d4cc5d9844b6ba03d30bba67cce5ddP1YwAcF2kYLAMoyQXZtb-GUw-JAOixnDpoce2dhXTiTgGTKmeSY6Uo9hwsg9LmI</string>
     <string name="app_name">Display a map</string>
+    <string name="google_api">AIzaSyDTneABjHOMXcS5a02S0DqK5pE7zkjjRfk</string>
     <string name="my_service">https://services.arcgis.com/NJIPZ3pQXvu3nhB7/arcgis/rest/services/Trailheads/FeatureServer/0</string>
     <string name="text1">text 1</string>
     <string name="text2">text 2</string>

@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color cyan
 color gray
 color purple_200
 color purple_500
@@ -34,6 +35,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string api_key
 string app_name
+string google_api
 string my_service
 string text1
 string text2
